@@ -2,12 +2,13 @@ import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyDOEdcfAEenTFXhOgxx41-3xLtPU8lA16g",
-    authDomain: "exellent-2025.firebaseapp.com",
-    projectId: "exellent-2025",
-    storageBucket: "exellent-2025.firebasestorage.app",
-    messagingSenderId: "413390145105",
-    appId: "1:413390145105:web:05b3efc303f14f64a1da70"
+    apiKey: "AIzaSyD2n2Tw_wLhiNSgQfJ9t56xuHvpANMGduk",
+  authDomain: "aplikasiskripsi-684cc.firebaseapp.com",
+  projectId: "aplikasiskripsi-684cc",
+  storageBucket: "aplikasiskripsi-684cc.firebasestorage.app",
+  messagingSenderId: "1004727986378",
+  appId: "1:1004727986378:web:d0f5cd9e97211f38de2c33",
+  measurementId: "G-MHH1PFQ1CC"
 };
 
 // Inisialisasi Firebase
