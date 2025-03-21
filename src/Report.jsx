@@ -26,7 +26,7 @@ const Report = () => {
     { name: "Sekolah", selector: row => row.school, sortable: true },
     { 
       name: "Nilai Latihan Soal", 
-      selector: row => row.exercise * 5, // Mengalikan nilai exercise dengan 5
+      selector: row => Math.round((row.exercise / 30) * 100), // Mengalikan nilai exercise dengan 5
       sortable: true 
     },
   ];
@@ -44,7 +44,7 @@ const exportToExcel = (filteredOnly = false) => {
       "Nama Lengkap": user.fullName,
       "Email": user.email,
       "Sekolah": user.school,
-      "Latihan Soal": user.exercise * 5, // Pastikan nilai dikali 5
+      "Latihan Soal": Math.round((user.exercise/30)*100), // Pastikan nilai dikali 5
     }));
   
     const worksheet = XLSX.utils.json_to_sheet(dataToExport);

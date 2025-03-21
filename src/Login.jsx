@@ -6,7 +6,7 @@ const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const staticEmail = "admin@monetix.com";
+  const staticEmail = "admin@um.com";
   const staticPassword = "admin123";
 
   const handleLogin = (e) => {
